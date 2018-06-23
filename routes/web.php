@@ -23,3 +23,4 @@ Route::any('/oss','Common\OssController@sign')->name('oss');
 
 include 'admin/admin.php';
 
+include 'api/api.php';
