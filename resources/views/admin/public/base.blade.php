@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8"/>
-    <title>后盾人 - houdunren.com</title>
+    <title>Video_ADMIN</title>
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>
@@ -43,18 +43,6 @@
                     <li class="top_menu active">
                         <a href="{{route('home')}}">
                             <i class="'fa-w fa fa-comments-o"></i> 网站主页 </a>
-                    </li>
-                    <li class="top_menu">
-                        <a href="http://houdunwang.com" target="_blank">
-                            <i class="'fa-w fa fa-cubes"></i> 实战培训 </a>
-                    </li>
-                    <li class="top_menu">
-                        <a href="http://houdunren.com">
-                            <i class="'fa-w fa fa-cubes"></i> 在线视频 </a>
-                    </li>
-                    <li class="top_menu">
-                        <a href="http://bbs.houdunwang.com">
-                            <i class="'fa-w fa fa-cubes"></i> 论坛讨论 </a>
                     </li>
                 </ul>
             </div>

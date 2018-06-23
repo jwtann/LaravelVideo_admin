@@ -42,6 +42,7 @@
                 @endforeach
                 </tbody>
             </table>
+            {{$lessons->links()}}
         </div>
     </div>
 

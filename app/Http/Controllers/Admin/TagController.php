@@ -38,7 +38,7 @@ class TagController extends CommonController
     public function store(Request $request)
     {
         $tname = $request->input('tname');
-        $result = Tag::where('tname','=',$tname);
+        $result = Tag::where('tname','=',$tname)->get()->toArray();
         if ($result){
             session()->flash('danger','标签已存在，请重新添加！');
             return redirect()->back();
@@ -80,7 +80,7 @@ class TagController extends CommonController
     public function update(Request $request, Tag $tag)
     {
         $tname = $request->input('tname');
-        $result = Tag::where('tname','=',$tname);
+        $result = Tag::where('tname','=',$tname)->get()->toArray();
         if ($result){
             session()->flash('danger','标签已存在,换一个试试！');
             return redirect()->back();

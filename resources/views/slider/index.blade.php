@@ -49,4 +49,5 @@
             </table>
         </div>
     </div>
+    {{$sliders->links()}}
 @endsection

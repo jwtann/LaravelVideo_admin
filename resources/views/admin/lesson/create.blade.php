@@ -143,12 +143,12 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="form-group image" style="display: none">
-                            <label class="col-sm-2 control-label">视频图片</label>
-                            <div class="col-sm-10">
-                                <img src="" alt="" :class="'img-thumbnail image'+v.btnid" style="height: 150px">
-                            </div>
-                        </div>
+                        {{--<div class="form-group image" style="display: none">--}}
+                            {{--<label class="col-sm-2 control-label">视频图片</label>--}}
+                            {{--<div class="col-sm-10">--}}
+                                {{--<img src="" alt="" :class="'img-thumbnail image'+v.btnid" style="height: 150px">--}}
+                            {{--</div>--}}
+                        {{--</div>--}}
                         <div class="col-sm-2">
                             <button class="btn btn-danger" @click.prevent="del(k)">删除视频</button>
                         </div>

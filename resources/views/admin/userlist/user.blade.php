@@ -44,4 +44,5 @@
             </table>
         </div>
     </div>
+    {{$user->links()}}
 @endsection
