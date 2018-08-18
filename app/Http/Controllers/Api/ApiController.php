@@ -43,8 +43,18 @@ class ApiController extends Controller
      * @return \Illuminate\Support\Collection
      */
     public function getCommendLessons($num = 5){
-        $commendlessons = Lesson::where('is_commend','=',1)->orderBy('id','DESC')->limit($num)->get();
+        $commendlessons = Lesson::where('is_commend','=',1)->inRandomOrder()->limit($num)->get();
         return $commendlessons;
+    }
+
+    /**
+     * 获取推荐课程数据接口
+     * @param int $num
+     * @return \Illuminate\Support\Collection
+     */
+    public function getHotLessons($num = 4){
+        $hotLessons = Lesson::where('is_hot','=',1)->inRandomOrder()->limit($num)->get();
+        return $hotLessons;
     }
 
     /**

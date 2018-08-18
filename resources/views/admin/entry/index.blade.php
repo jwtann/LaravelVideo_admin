@@ -2,8 +2,8 @@
 
 @section('content')
     <div class="jumbotron">
-        <h1 class="display-3">Jumbo heading</h1>
-        <p class="lead">Jumbo helper text</p>
+        <h1 class="display-3">hello,Tony</h1>
+        <p class="lead">welcome</p>
         <hr class="my-2">
         <p>More info</p>
         <p class="lead">

@@ -7,6 +7,9 @@ Route::get('/getSliders','Api\ApiController@getSliders');
 Route::get('/getTags','Api\ApiController@getTags');
 //获取推荐课程路由
 Route::get('/getCommendLessons/{num}','Api\ApiController@getCommendLessons');
+//获取热门课程路由
+Route::get('/getHotLessons/{num}','Api\ApiController@getHotLessons');
+
 //获取所有视频课程路由
 Route::get('/getAllLessons','Api\ApiController@getAllLessons');
 //获取某个课程数据路由
